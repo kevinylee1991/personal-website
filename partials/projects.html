@@ -1,0 +1,22 @@
+<div id='content'>
+	<h2 class='title'>Projects</h2>
+	<div class='row'>
+		<div ng-repeat= 'project in projects'>
+			<div class='col-xs-12 col-sm-6 col-md-4 col-lg-4 project'>
+			    <a href='{{project.link}}'>
+			        <div class='description hidden-sm'>
+			            <h3>{{project.name}}</h3>
+			            <p>{{project.description}}</p>
+			            <p>{{project.tools}}</p>
+			        </div>
+			        <div class='description-mobile visible-sm'>
+			            <h3>{{project.name}}</h3>
+			            <p>{{project.description}}</p>
+			            <p>{{project.tools}}</p>
+			        </div>
+			        <img class='thumb' ng-src='{{project.pic}}'>
+			    </a>	
+			</div>
+		</div>
+	</div>
+</div>
